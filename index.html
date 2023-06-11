@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  
+  <!-- Link for the bootstrap framework -->
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+ 
+  <!-- To link the html code with css -->
+ 
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="calculator">
+      <input type="text" id="result" class="form-control" readonly>
+      <div class="buttons">
+
+      <!-- To create buttons on the calculator -->
+
+      <button onclick="backspace('')">DL</button>
+        <button onclick="appendValue('%')">%</button>
+        <button onclick="calculateSquare('sq')">sq</button>
+        <button onclick="clearResult('')">AC</button>
+        <button onclick="appendValue('7')">7</button>
+        <button onclick="appendValue('8')">8</button>
+        <button onclick="appendValue('9')">9</button>
+        <button onclick="appendValue('+')">+</button>
+        <button onclick="appendValue('4')">4</button>
+        <button onclick="appendValue('5')">5</button>
+        <button onclick="appendValue('6')">6</button>
+        <button onclick="appendValue('-')">-</button>
+        <button onclick="appendValue('1')">1</button>
+        <button onclick="appendValue('2')">2</button>
+        <button onclick="appendValue('3')">3</button>
+        <button onclick="appendValue('*')">*</button>
+        <button onclick="appendValue('.')">.</button>
+        <button onclick="appendValue('0')">0</button>
+        <button onclick="calculate()">=</button>
+        <button onclick="appendValue('/')">/</button>
+      </div>
+    </div>
+  </div>
+   <!-- Linking the code with Java Script -->
+  <script src="script.js"></script>
+</body>
+</html>
